@@ -1,0 +1,16 @@
+[
+{
+  "modid": "reciperemover",
+  "name": "RecipeRemover",
+  "description": "A simple mod that removes the recipe book",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://example.com",
+  "updateUrl": "",
+  "authorList": ["Onyx-i7"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
