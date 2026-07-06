@@ -1,0 +1,48 @@
+name: Build Mod
+
+on:
+  push:
+    branches: [ main, master, test ]
+  pull_request:
+    branches: [ main, master, test ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+
+      # Set up Java 25 for Gradle
+      - name: Set up JDK 25 for Gradle
+        uses: actions/setup-java@v5.4.0
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      # Cache Gradle dependencies to speed up builds
+      - name: Cache Gradle packages
+        uses: actions/cache@v5.1.0
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      # Build the mod with RetroFuturaGradle
+      - name: Build with Gradle
+        run: ./gradlew build --no-daemon
+      
+      - name: Upload All Mod Jars
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: RecipeRemover
+          path: build/libs/*.jar
+          if-no-files-found: error
