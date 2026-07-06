@@ -4,7 +4,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = RecipeRemover.MODID, name = RecipeRemover.NAME, version = RecipeRemover.VERSION, updateJSON = "")
+@Mod(modid = RecipeRemover.MODID, name = RecipeRemover.NAME, version = RecipeRemover.VERSION, updateJSON = "https://raw.githubusercontent.com/Onyx-i7/RecipeRemover/refs/heads/main/modupdatechecker.json")
 public class RecipeRemover {
     public static final String MODID = "reciperemover";
     public static final String NAME = "Recipe Remover";

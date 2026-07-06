@@ -6,7 +6,7 @@
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://github.com/Onyx-i7/RecipeRemover",
-  "updateUrl": "",
+  "updateUrl": "https://raw.githubusercontent.com/Onyx-i7/RecipeRemover/refs/heads/main/modupdatechecker.json",
   "authorList": ["Onyx-i7"],
   "credits": "",
   "logoFile": "",
