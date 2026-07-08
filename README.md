@@ -13,7 +13,7 @@ A lightweight Minecraft mod that completely removes the vanilla recipe book inte
 - **Clears the internal recipe list** to prevent the game from processing and filtering thousands of modded recipes every time you open your inventory
 
 ### Why you should use it:
-If you play modpacks with many mods, you've probably experienced that annoying 1-2 second freeze when opening your inventory or crafting table. This happens because the vanilla recipe book tries to load, filter, and prepare to render thousands of recipes from all your installed mods. NoRecipeBook eliminates this lag source completely while keeping JEI fully functional for viewing recipes.
+If you play modpacks with many mods, you've probably experienced that annoying 1-2 second freeze when opening your inventory or crafting table. This happens because the vanilla recipe book tries to load, filter, and prepare to render thousands of recipes from all your installed mods. NoRecipeBook eliminates this lag source completely while keeping HEI fully functional for viewing recipes.
 
 ---
 
@@ -21,9 +21,8 @@ If you play modpacks with many mods, you've probably experienced that annoying 1
 
 - **Performance Boost**: Eliminates inventory opening lag in heavy modpacks
 - **Clean Interface**: Removes the recipe book button that most players don't use
-- **JEI Compatible**: Does not affect Just Enough Items or other recipe viewers
 - **Crash-Proof**: Uses safe error handling to prevent game crashes
-- **Lightweight**: Minimal resource usage, no configuration needed
+- **Lightweight**: Minimal resource usage
 - **Client-Side Only**: Can be installed on client without requiring server installation
 
 ---
@@ -33,7 +32,7 @@ If you play modpacks with many mods, you've probably experienced that annoying 1
 ### Dependencies:
 - **Minecraft**: 1.12.2
 - **Minecraft Forge**: 14.23.5.2847 or compatible versions
-- **JEI (Optional but Recommended)**: Just Enough Items for viewing recipes after removing the vanilla book
+- **HEI (Optional but Recommended)**: Had Enough Items for viewing recipes after removing the vanilla book
 
 ### Installation:
 1. Download the latest version of NoRecipeBook
@@ -55,7 +54,7 @@ The mod works by:
 ## Important Notes
 
 - This mod is **client-side only** and does not need to be installed on servers
-- The vanilla recipe book is completely removed - use JEI or other mods to view recipes
+- The vanilla recipe book is completely removed - use HEI or other mods to view recipes
 - Compatible with most mods that add recipes
 - Does not affect crafting mechanics or recipe functionality in any way
 
