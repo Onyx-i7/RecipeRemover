@@ -1,6 +1,6 @@
 package com.onyxi7.norecipebook.event;
 
-import com.onyxi7.norecipebook.norecipebook;
+import com.onyxi7.norecipebook.NoRecipeBook;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiContainer;
