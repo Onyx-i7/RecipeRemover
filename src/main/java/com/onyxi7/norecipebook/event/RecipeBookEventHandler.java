@@ -55,7 +55,7 @@ public class RecipeBookEventHandler {
                     }
                 } catch (Exception e) {
                     // If it fails, the game doesn't crash it just logs it
-                    System.err.println("[RecipeRemover] The internal recipes could not be cleared, but the button is hidden");
+                    System.err.println("[NoRecipeBook] The internal recipes could not be cleared, but the button is hidden");
                 }
             }
         }
