@@ -21,7 +21,7 @@ apply plugin: 'com.gtnewhorizons.retrofuturagradle'
 // MOD CONFIGURATION
 // =============================================================================
 
-version = '1.1.0'
+version = '1.2.0'
 group = 'com.onyxi7.norecipebook'
 
 base {
